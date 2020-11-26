@@ -1,0 +1,221 @@
+@import url('https://fonts.google.com/specimen/Playfair+Display');
+/*HEADER*/
+header{
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#logowhite{
+  align: left;
+  width: 17%;
+  height: 10%;
+  margin-top: 6%;
+  margin-left: 9%;
+}
+label[for="menu"]{
+  display: none;
+  color: #FFFFFF;
+  font-family: Playfair Display;
+  font-size: 90%;
+  text-align: right;
+  width: 200%;
+  height: 200%;
+}
+#navbar{
+  display: inline-block;
+  float: right;
+  margin-top: 6%;
+  margin-right: 9%;
+  border-bottom: 1px; 
+}
+header>nav>a{
+  font-family: Playfair Display;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  font-size: 100%;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+header>nav>a:hover{
+  background: #B7AB9D;
+  color: #35363A;
+}
+header>nav>a:focus{
+  background: #B7AB9D;
+  color: #35363A;
+}
+header>nav>a:active{
+  background: #B7AB9D;
+  color: #E7E9E6;
+}
+#menu{
+  display: none;
+}
+@media(max-width: 800px){
+  label[for="menu"]{
+    display: block;
+    align-content: left;
+  }
+  #menu:checked ~ #navbar{
+    margin-right: 0;
+  }
+  #navbar{
+    margin-top: 5px;
+    margin-right: -100%;
+    transition: all .4s;
+  }
+  #navbar ul li{
+    width: 100%;
+    float: none;
+  }
+  #navbar ul{
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s;
+  }
+}
+header>div{
+  font-family: Playfair Display;
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 300%;
+  margin-right: 9%;
+}
+#slogan1{
+  margin-top: 10%;
+}
+#slogan2{
+  padding-bottom: 5%;
+}
+/* BETWEEN HEADER AND FOOTER */
+body{
+  background-color: #35363A;
+}
+#title{
+  font-family: Playfair Display;
+  font-size: 65px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: #B7AB9D;
+  text-align: center; 
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 30%;
+  background-color: #FFFFFF;
+  border: none;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 90%;
+  background: #FFFFFF;
+  color: #35363A;
+  margin-bottom: -10%;
+  position: sticky;
+}
+.card-body .btn {
+  display: block;
+  color: #35363A;
+  font-size: 200%;
+  text-align: center;
+  background: #D6C2B7;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: -10%;
+  text-decoration: none;
+  padding: 5% 5%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+#anel, #relogio, #colar{
+  width: 90%;
+  height: 90%;
+  margin: 1%;
+}
+
+/* FOOTER */
+footer{
+  background-color: #B7AB9D;
+  background-size: cover;
+}
+#logoblack{
+  align: left;
+  width: 17%;
+  height: 10%;
+  margin-top: 5%;
+  margin-left: 9%;
+  margin-bottom: 3%;
+}
+footer>ul{
+  display: inline-block;
+  float: right;
+  list-style: none;
+  margin-top: 5%;
+  margin-right: 9%;
+  margin-bottom: 3%;
+}
+.contato{
+  font-family: Playfair Display;
+  font-size: 30px;
+  color: #35363A;
+  margin: 5px;
+}
+footer>p{
+  font-family: Playfair Display;
+  color: #35363A;
+  background-color: #FFFFFF;
+  background-size: cover;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 7%;
+}
